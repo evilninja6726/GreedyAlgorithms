@@ -22,7 +22,7 @@ public class FractionalKnapsack {
                 res += pair[i].value;
                 capacity -= pair[i].weight;
             } else {
-                res += (pair[i].value * capacity) / pair[i].weight;
+                res += (double) (pair[i].value * capacity) / pair[i].weight;
                 return res;
             }
         }
